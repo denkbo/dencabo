@@ -1,0 +1,367 @@
+/* estilo general */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* cuerpo */
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* cabecera */
+header {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    padding-top: 30px;
+    letter-spacing: 20px;
+    width: 100%;
+    margin-bottom: 16px;
+
+
+}
+
+/* pie de página */
+footer {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid black;
+
+}
+
+.portada {
+    position: relative;
+    margin-top: 2%;
+    width: 780px;
+    height: 520px;
+    z-index: 1;
+
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+/*títulos de las páginas secundarias */
+.titulos {
+    margin-top: 0;
+    padding: 12px;
+    letter-spacing: 15px;
+    background-color: rgb(232, 231, 231);
+}
+
+
+/* menú principal horizontal */
+.menu {
+    position: relative;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
+    padding: 0px 28px 0px 28px;
+    letter-spacing: 4px;
+    padding-left: 180px;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.menu ul {
+    list-style: none;
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 10px 30px 10px 30px;
+    padding: 12px 30px 12px 30px;
+
+
+
+}
+
+.menu a {
+    color: rgb(77, 76, 76);
+    text-decoration: none;
+    padding: 0px;
+
+
+
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
+
+
+}
+
+
+.menu ul li:hover .submenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+.submenu li a:hover {
+    color: rgba(243, 0, 0, 0.537);
+    text-decoration: none;
+    width: 100%;
+    transform: scale(1.06);
+
+
+
+}
+
+.submenu li {
+    padding: 0;
+    width: 120%;
+
+}
+
+/* icono y enlace a instagram */
+.ig {
+    margin-left: auto;
+
+}
+
+.ig a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.icono-ig {
+    width: 20px;
+    height: 20px;
+
+}
+
+.icono-ig:hover {
+    transform: scale(1.1);
+
+
+}
+
+/* menú vertical de las páginas secundarias */
+.menuver {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    width: 18%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menuver ul {
+    position: fixed;
+    list-style: circle;
+    list-style-position: inside;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 100px;
+
+}
+
+.menuver ul li {
+    padding: 16px;
+
+
+
+}
+
+.menuver a {
+    color: rgb(77, 76, 76);
+    padding: 0px;
+
+
+
+}
+
+.menuver a:hover {
+    transform: scale(1.1);
+    color: rgb(243, 0, 0, 0.537);
+}
+
+/* contenedor del formulario */
+.formulario {
+    margin-top: 5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 60%;
+    height: 40%;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* estilo para el comentario del formulario */
+.formulario textarea {
+    width: 700px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* estilo para aumentar el tamaño de los campos */
+.formulario input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+/* hover para aumentar el tamaño de los campos */
+.formulario input:hover {
+    transform: scale(1.1);
+}
+
+
+/* contenedor principal de las páginas secundarias, dentro de este se encuentra el menú vertical y
+ otros contenedores como galerías y secciones */
+.contenedor {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* contenedor donde se alojan todas las secciones del portfolio */
+.contenedorPortfolio {
+    margin-top: 30px;
+    padding: 0;
+    margin-right: 15px;
+
+}
+
+/* estilo del contenedor de cada una de las secciones, he decidido cambiar wrap por grid consiguiendo mejor estetica
+a la hora de mezclar imágenes verticales y horizontales */
+.contenedorSeccion {
+    /* prueba
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 16px;
+    */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* tamaño principal del contenedor de las imágenes*/
+.contenedorSeccion div {
+    width: 100%;
+    height: 250px;
+
+}
+
+/* tamaño de las imágenes para que se ajusten a su contenedor y mantengan su proporción */
+.contenedorSeccion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* hover con delay para aumentar el tamaño de las imágenes */
+.contenedorSeccion img:hover {
+    transform: scale(2);
+    transition-delay: 1s;
+
+}
+
+/* tamaño principal de los vídeos */
+.contenedorSeccion video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* estilo de los párrafos dentro de las secciones */
+.contenedorSeccion p {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+
+/* estilo de los títulos */
+.contenedorPortfolio h3 {
+    border-bottom: 1px solid black;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    color: rgb(45, 45, 45);
+    font-size: 12px;
+}
+
+/* estilo del texto "manten el cursor para ampliar" de la galeria */
+.cursiva {
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* contenedor de la página "Galería", este se encuentra dentro de la clase genérica y principal "contenedor"*/
+.contenedorGaleria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+/* tamaño de las imágenes de "Galería" */
+.contenedorGaleria img {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+}
+
+/* flecha para desplazarse al título superior cuando te encuentras en el inferior de la página*/
+.flecha {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+}
