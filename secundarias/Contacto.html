@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Encabo | Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>DANIEL ENCABO</h2>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+
+                <li><a href="Galeria.html">GALERIA</a>
+                    <ul class="submenu">
+                        <li><a href="Pintura.html">PINTURA</a></li>
+                        <li><a href="Fotografía.html">FOTOGRAFÍA</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="Tienda.html">TIENDA</a>
+                    <ul class="submenu">
+                        <li><a href="">OBRAS</a></li>
+                        <li><a href="">PRINTS</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">CONTACTO</a></li>
+                <li class="ig"><a href="https://www.instagram.com/" target="blank">
+                        <img src="../iconos/instagram.png" alt="Instagram" class="icono-ig" /></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <p class="titulos">CONTACTO</p>
+        <div class="contenedor">
+            <div class="formulario">
+                <form>
+
+                    <table>
+
+                        <tr>
+                            <td>Nombre*</td>
+                            <td>Apellidos*</td>
+                            <td>Correo electrónico*</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="nombre" value="" placeholder="Campo obligatorio" required></td>
+                            <td><input type="text" name="apellidos" value="" placeholder="Campo obligatorio" required>
+                            </td>
+                            <td><input type="email" name="correo" value="" placeholder="Campo obligatorio" required>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td></td>
+                            <td>Asunto*</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="nombre" value=""></td>
+                            <td></td>
+                            <td><select required>
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="1">Obras originales</option>
+                                    <option value="2">Prints</option>
+                                    <option value="3">Encargos</option>
+                                    <option value="4">Otro</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p>Comentario*</p> <textarea placeholder="Escribe aquí..." required></textarea>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                    <input type="submit" name="Enviar" required>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2025 Daniel Encabo® All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
